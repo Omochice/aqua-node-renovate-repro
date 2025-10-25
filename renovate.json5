@@ -3,4 +3,10 @@
   extends: [
     "github>aquaproj/aqua-renovate-config#2.9.0",
   ],
+  packageRules: [
+    {
+      matchPackageNames: ["nodejs/node"],
+      versioning: "node",
+    },
+  ],
 }
